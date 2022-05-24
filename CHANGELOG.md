@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.1 (2022-05-24)
+### Fix
+* **verioning:** No needal for building ([`7105817`](https://github.com/StarNumber12046/FluentModerator/commit/710581782aada08a5203f5e6cfca79a235d6e6e6))
+
 ## v1.1.0 (2022-05-24)
 ### Feature
 * **verioning:** And now config ([`5494f59`](https://github.com/StarNumber12046/FluentModerator/commit/5494f590171d0bc35156bdf427fe4d8c2f1b3364))
