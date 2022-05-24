@@ -8,6 +8,8 @@ __pycache__/
 
 # Secrets
 config/**
+config/
+config
 config/*.py
 config/bot.py
 config/db.py
