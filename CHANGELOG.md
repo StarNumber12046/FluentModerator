@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.0 (2022-05-24)
+### Feature
+* **debug:** Added jishaku ([`93f5949`](https://github.com/StarNumber12046/FluentModerator/commit/93f5949cea5b5a3647316b518e753ac7474842aa))
+
 ## v1.2.1 (2022-05-24)
 ### Fix
 * **versioning:** Removed pypi publishing ([`4a18d6c`](https://github.com/StarNumber12046/FluentModerator/commit/4a18d6c9286356d4dae0ec953f73f8ffc43ef596))
