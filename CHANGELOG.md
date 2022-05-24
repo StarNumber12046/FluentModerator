@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.1 (2022-05-24)
+### Fix
+* **versioning:** Removed pypi publishing ([`4a18d6c`](https://github.com/StarNumber12046/FluentModerator/commit/4a18d6c9286356d4dae0ec953f73f8ffc43ef596))
+
 ## v1.2.0 (2022-05-24)
 ### Feature
 * **versioning:** Print versioning autimatically ([`fb8c603`](https://github.com/StarNumber12046/FluentModerator/commit/fb8c603ec1fa6f7583fca287ec93e178751b5ecc))
