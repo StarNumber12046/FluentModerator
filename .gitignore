@@ -9,6 +9,8 @@ __pycache__/
 # Secrets
 config/**
 config/*.py
+config/bot.py
+config/db.py
 secrets/*
 
 # Distribution / packaging
