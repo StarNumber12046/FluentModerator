@@ -5,7 +5,7 @@ import json
 import config.bot as botcfg
 import config.db as dbcfg
 import os
-
+import versions
 
 class Bot(commands.Bot):
   def __init__(self, *args, **kwargs):
@@ -20,6 +20,7 @@ class Bot(commands.Bot):
 
   async def on_ready(self):
       print("Ready, starting to load cogs!")
+      print("Started bot v"+versions.__version__)
       for x in os.listdir("cogs"):
           try:
               if x.endswith(".py"):
