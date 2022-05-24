@@ -5,6 +5,7 @@ import json
 import config.bot as botcfg
 import config.db as dbcfg
 import os
+import versions
 
 
 class Bot(commands.Bot):
@@ -17,6 +18,7 @@ class Bot(commands.Bot):
     self.db.write(dump)
     self.db.flush()
     self.json = json.loads(dump)
+    print("Running on v"+versions.__version__)
 
   async def on_ready(self):
       print("Ready, starting to load cogs!")
