@@ -6,6 +6,7 @@ import config.bot as botcfg
 import config.db as dbcfg
 import os
 import versions
+import jishaku
 
 
 class Bot(commands.Bot):
@@ -19,9 +20,11 @@ class Bot(commands.Bot):
     self.db.flush()
     self.json = json.loads(dump)
     print("Running on v"+versions.__version__)
+    
 
   async def on_ready(self):
       print("Ready, starting to load cogs!")
+      await self.load_extension('jishaku')
       for x in os.listdir("cogs"):
           try:
               if x.endswith(".py"):
