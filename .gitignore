@@ -8,7 +8,7 @@ __pycache__/
 
 # Secrets
 config/**
-config/*
+config/*.py
 secrets/*
 
 # Distribution / packaging
