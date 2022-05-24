@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.0 (2022-05-24)
+### Feature
+* **versioning:** Print versioning autimatically ([`fb8c603`](https://github.com/StarNumber12046/FluentModerator/commit/fb8c603ec1fa6f7583fca287ec93e178751b5ecc))
+
 ## v1.1.1 (2022-05-24)
 ### Fix
 * **verioning:** No needal for building ([`7105817`](https://github.com/StarNumber12046/FluentModerator/commit/710581782aada08a5203f5e6cfca79a235d6e6e6))
