@@ -7,13 +7,7 @@ __pycache__/
 *.so
 
 # Secrets
-config/**
-config/
-config
-config/*.py
-config/bot.py
-config/db.py
-secrets/*
+.env
 
 # Distribution / packaging
 .Python
