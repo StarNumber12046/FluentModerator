@@ -74,7 +74,7 @@ class Moderation(commands.Cog):
             print(e.__traceback__)
 
 
-    
+
     @app_commands.command(description="unmute someone")
     @app_commands.checks.has_permissions(moderate_members=True)
     async def unmute(self, interaction:discord.Interaction, user: discord.Member):
@@ -91,7 +91,7 @@ class Moderation(commands.Cog):
             print(e.__traceback__)
 
 
-    
+
     @app_commands.command(description="ban someone")
     @app_commands.checks.has_permissions(ban_members=True)
     async def ban(self, interaction:discord.Interaction, user: discord.Member, *, reason:str=None):
@@ -113,7 +113,7 @@ class Moderation(commands.Cog):
         except Exception as e:
             print(e.__traceback__)
 
-    
+
     @app_commands.command(description="delete some messages")
     @app_commands.checks.has_permissions(manage_messages=True)
     async def purge(self, interaction:discord.Interaction, limit: int = 2):
@@ -129,7 +129,7 @@ class Moderation(commands.Cog):
             await ch.send(embed=embed)
         except Exception as e:
             print(e.__traceback__)
-    
+
 
 async def setup(bot) -> None:
     await bot.add_cog(Moderation(bot))

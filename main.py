@@ -41,7 +41,7 @@ class Bot(commands.Bot):
             """
             If the error is a missing permission error, send a message saying the user is missing a
             permission. If the error is anything else, send a message saying something went wrong.
-            
+
             :param interaction: discord.Interaction
             :type interaction: discord.Interaction
             :param error: The error that was raised

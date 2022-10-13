@@ -22,7 +22,7 @@ class ModEditor(commands.GroupCog, name="filter"):
       self.words_collection.update_one({"guild": f"{interaction.guild.id}"}, {"$set": {"words": words}})
     else:
       self.words_collection.insert_one({"guild": f"{interaction.guild.id}", "words": [word]})
-      
+
     try:
       embed = discord.Embed(title="**New bad word**", description="Now `" + word + "` is a bad word", color=discord.Color.green())
       guild_settings = self.guilds_collection.find_one({"guild": f"{interaction.guild.id}"})
@@ -44,13 +44,13 @@ class ModEditor(commands.GroupCog, name="filter"):
       pass
     else:
       return await interaction.response.send_message("This guild has no bad words")
-    
+
     self.bot.db.seek(0)
     data[f"{interaction.guild.id}"]["bad_words"].remove(word)
     self.bot.db.truncate()
     self.bot.db.flush()
     self.bot.db.write(json.dumps(data))
-    
+
     await interaction.response.send_message("Succesfully removed `" + word + "`")
     self.bot.db.flush()
     print(data)
