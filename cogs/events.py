@@ -4,7 +4,7 @@ from discord.ext import commands
 class EventsManager(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    
+
     @commands.Cog.listener()
     async def on_message(self, message):
         # data = self.bot.json
@@ -20,6 +20,6 @@ class EventsManager(commands.Cog):
         #             embed = discord.Embed(title="Message deleted", description=f"Channel: {message.channel.mention}\nUser: {message.author.mention}\nMessage: {message.content}", color=discord.Color.red())
         #             await self.bot.get_channel(int(data[f"{message.guild.id}"]["log_channel"])).send(embed=embed)
         pass
-        
+
 async def setup(bot):
     await bot.add_cog(EventsManager(bot))
